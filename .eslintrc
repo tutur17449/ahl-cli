@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "root": true,
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "arrow-body-style": 0,
+    "arrow-parens": "off",
+    "no-console": "off"
+  }
+}

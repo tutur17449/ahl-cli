@@ -1,0 +1,44 @@
+{
+  "name": "ahl-cli",
+  "version": "1.0.0",
+  "main": "src/bin/index.js",
+  "exports": "./src/bin/index.js",
+  "files": [
+    "src/**/*"
+  ],
+  "bin": {
+    "ahl-cli": "./src/bin/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^8.3.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1"
+  },
+  "scripts": {
+    "lint": "eslint ./src --ext .js,.tsx,.ts",
+    "format": "prettier -w --loglevel error .",
+    "start": "./src/bin/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "prettier -w --loglevel error .",
+      "eslint ./src --ext .js,.tsx,.ts"
+    ]
+  }
+}
