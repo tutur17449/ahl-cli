@@ -24,8 +24,8 @@ module.exports = {
           'node-ts-starter',
           'node-ts-rest-pg',
           'node-ts-rest-mongo',
-          'node-ts-qgl-pg',
-          'node-ts-qgl-mongo',
+          'node-ts-gql-pg',
+          'node-ts-gql-mongo',
         ],
       },
     ];
