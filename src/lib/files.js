@@ -10,7 +10,7 @@ const files = {
 
   getPath: (name, template) => {
     return {
-      templatePath: path.join(__dirname, '..', '..', 'templates', template),
+      templatePath: path.join(__dirname, '..', 'templates', template),
       projectPath: path.join(process.cwd(), name),
     };
   },
