@@ -4,6 +4,10 @@
 
 🚀 Setup your next TS project in few seconds
 
+# Instalaltion
+
+`npm install -g ahl-cli`
+
 ## Commands
 
 ```bash

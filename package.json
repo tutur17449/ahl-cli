@@ -1,6 +1,15 @@
 {
   "name": "ahl-cli",
   "version": "1.0.0",
+  "private": false,
+  "description": "Personnal cli tools to setup project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tutur17449/ahl-cli"
+  },
+  "author": "tutur17449",
+  "homepage": "https://github.com/tutur17449/ahl-cli",
+  "license": "MIT",
   "main": "src/bin/index.js",
   "exports": "./src/bin/index.js",
   "files": [
@@ -9,7 +18,14 @@
   "bin": {
     "ahl-cli": "./src/bin/index.js"
   },
-  "license": "MIT",
+  "keywords": [
+    "cli",
+    "tools",
+    "typescript",
+    "react",
+    "next",
+    "node"
+  ],
   "dependencies": {
     "chalk": "^4.1.2",
     "clear": "^0.1.0",
