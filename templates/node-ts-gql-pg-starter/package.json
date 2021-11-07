@@ -1,5 +1,5 @@
 {
-  "name": "node-ts-starter",
+  "name": "node-ts-gql-pg-starter",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -40,13 +40,5 @@
       "prettier -w --loglevel error .",
       "eslint ./src --ext .js,.tsx,.ts"
     ]
-  },
-  "keywords": [
-    "node",
-    "typescript",
-    "eslint",
-    "prettier",
-    "husky",
-    "jest"
-  ]
+  }
 }

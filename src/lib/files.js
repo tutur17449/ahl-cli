@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const excludesDirFile = ['node_modules', 'data', 'mongo-data', 'pgAdmin4'];
+const excludesDirFile = ['node_modules', 'data', 'mongo-data', 'pgadmin4'];
 
 const files = {
   directoryExists: filePath => {

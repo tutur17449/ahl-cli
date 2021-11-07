@@ -1,15 +1,3 @@
-# ahl-cli
+# AHL-CLI
 
-## Commands
-
-ahl-cli --init project
-
-- node-ts
-- react-ts
-- next-ts
-- node-rest-ts
-  - pg
-  - mongo
-- node-gql-ts
-  - pg
-  - mongo
+![ci](https://github.com/tutur17449/ahl-cli/actions/workflows/github-actions.yml/badge.svg)
