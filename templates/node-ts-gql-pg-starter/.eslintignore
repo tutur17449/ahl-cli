@@ -1,4 +1,5 @@
 node_modules/
 dist/
 data/
+src/graphql/generated/
 pgadmin4/

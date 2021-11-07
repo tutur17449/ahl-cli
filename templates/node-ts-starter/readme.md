@@ -1,8 +1,8 @@
-# Reactjs Typescript starter
+# Nodejs Typescript starter
 
 ## Details
 
-This template provide quickstart configuration for Reactjs
+This template provide quickstart configuration for Node.js
 
 Includes :
 - typescript
@@ -10,8 +10,8 @@ Includes :
 - prettier
 - jest
 - husky
-- react-router-dom
-- styled-components
+- express
+- dotenv
 
 ## Commands
 
@@ -19,7 +19,10 @@ Includes :
 #installation
 yarn
 
-#run
+#run dev
+yarn start:dev
+
+#run production
 yarn start
 
 #test

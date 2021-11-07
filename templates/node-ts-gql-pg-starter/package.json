@@ -4,17 +4,34 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start:db": "docker-compose up -d --build",
+    "stop:db": "docker-compose stop",
     "start:ts": "ts-node --files ./src/server.ts",
     "start:dev": "NODE_ENV=development nodemon",
     "start": "NODE_ENV=production node dist/server.js",
     "lint": "eslint ./src --ext .js,.tsx,.ts",
     "format": "prettier -w --loglevel error .",
     "build": "rm -rf ./dist && tsc",
+    "gen": "graphql-codegen --config codegen.yml",
+    "migration:create": "knex migrate:make --cwd src/infrastructure/knex",
+    "migration:run": "knex migrate:latest --cwd src/infrastructure/knex",
+    "migration:rollback": "knex migrate:rollback --cwd src/infrastructure/knex",
+    "seed": "knex seed:run --cwd src/infrastructure/knex",
     "test": "NODE_ENV=test jest --config jest.config.js --no-cache"
   },
   "dependencies": {
+    "@graphql-codegen/cli": "^2.2.2",
+    "@graphql-codegen/introspection": "^2.1.0",
+    "@graphql-codegen/typescript": "^2.3.1",
+    "@graphql-codegen/typescript-resolvers": "^2.4.0",
+    "apollo-server-express": "^3.5.0",
+    "dataloader": "^2.0.0",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "graphql": "^16.0.1",
+    "joi": "^17.4.2",
+    "knex": "^0.95.13",
+    "pg": "^8.7.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
