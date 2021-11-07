@@ -16,7 +16,7 @@ clear();
 
 console.log(
   `${chalk.yellow(figlet.textSync('AHL-CLI', { horizontalLayout: 'full' }))}
-  ${chalk.blue('🚀 setup your next TS project in few seconds')}
+  ${chalk.blue('🚀 Setup your next TS project in few seconds')}
   `,
 );
 

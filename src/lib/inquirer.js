@@ -22,10 +22,10 @@ module.exports = {
           'react-ts-starter',
           'next-ts-starter',
           'node-ts-starter',
-          'node-ts-rest-pg-starter',
-          'node-ts-rest-mongo-starter',
           'node-ts-gql-pg-starter',
-          'node-ts-gql-mongo-starter',
+          // 'node-ts-rest-pg-starter',
+          // 'node-ts-rest-mongo-starter',
+          // 'node-ts-gql-mongo-starter',
         ],
       },
     ];
